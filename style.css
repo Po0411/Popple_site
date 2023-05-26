@@ -47,6 +47,7 @@ h2 {
     padding: 1rem;
     margin-bottom: 1rem;
     background-color: white;
+    transition: transform 0.3s ease;
 }
 
 ul {
@@ -55,4 +56,18 @@ ul {
 
 li {
     margin-bottom: 1rem;
+}
+
+.link-arrows {
+    width: 20px;
+    height: 20px;
+    float: right;
+    position: relative;
+    top: -14px;
+}
+
+
+.portfolio-item:hover {
+    /* 마우스를 올렸을 때 위로 올라가는 위치 설정: 여기에서는 10px로 설정 */
+    transform: translateY(-10px);
 }
