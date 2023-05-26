@@ -66,8 +66,30 @@ li {
     top: -14px;
 }
 
+.portfolio-itemSS {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    transition: transform 0.3s ease;
+
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 100PX;
+    overflow: hidden;
+}
+
+.portfolio-items {
+    white-space: nowrap;
+}
+
 
 .portfolio-item:hover {
-    /* 마우스를 올렸을 때 위로 올라가는 위치 설정: 여기에서는 10px로 설정 */
+    transform: translateY(-10px);
+}
+
+.portfolio-itemSS:hover {
     transform: translateY(-10px);
 }
