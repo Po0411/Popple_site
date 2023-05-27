@@ -66,6 +66,14 @@ li {
     top: -14px;
 }
 
+.link-arrows_ {
+    width: 20px;
+    height: 20px;
+    float: right;
+    position: relative;
+    top: -35px;
+}
+
 .portfolio-itemSS {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -92,4 +100,9 @@ li {
 
 .portfolio-itemSS:hover {
     transform: translateY(-10px);
+}
+
+.control{
+    position: relative;
+    top: -8px;
 }
