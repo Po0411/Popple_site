@@ -5,9 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../로고JO.png" rel="shortcut icon" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a7e3c4c807.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <title>C#과 유니티로 배우는 게임 개발 올인원 패키지 Online.</title>
 </head>
 <body>
-    
+    <div class="main-image-container">
+        <img class="main-image" src="./수료증이미지/유니티로 배우는 게임 개발.png">
+    </div>
+    <div class="icon-container">
+        <i class="fas fa-image fa-2x"></i>
+    </div>
+    <script src="script.js"></script>
+    <div class="container">
+        <div class="text-block">
+        <h1>해당 강의에서 배운 내용 입니다.</h1>
+        <p>기본적인 프리미어 프로 편집 방법</p>
+        </div>
+    </div>
+
+    <script>
+        let isImageVisible = false;
+
+    document.querySelector('.icon-container').addEventListener('click', function() {
+    const mainImage = document.querySelector('.main-image');
+    if (isImageVisible) {
+        mainImage.classList.remove('visible');
+        mainImage.style.width = '0%';
+    } else {
+        mainImage.classList.add('visible');
+        mainImage.style.width = '50%';
+    }
+    isImageVisible = !isImageVisible;
+    });
+
+    document.querySelector('.main-image').addEventListener('click', function() {
+    this.classList.remove('visible');
+    this.style.width = '0%';
+    isImageVisible = false;
+    });
+
+    </script>
 </body>
 </html>
