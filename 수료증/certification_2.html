@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../로고JO.png" rel="shortcut icon" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a7e3c4c807.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <title>MBTI 테스트 만들며 배우는 왕초보 코딩</title>
+</head>
+<body>
+    <div class="main-image-container">
+        <img class="main-image" src="./수료증이미지/MBTI 테스트 제작하기.png">
+    </div>
+    <div class="icon-container">
+        <i class="fas fa-image fa-2x"></i>
+    </div>
+    <script src="script.js"></script>
+    <div class="container">
+        <div class="text-block">
+        <h1>해당 강의에서 배운 내용 입니다.</h1>
+        <p>HTML로 웹페이지 제작</p>
+        <p>기본적인 html, css, js 문법과 사용 방법</p>
+        <p>디자인 이미지 설정들을 배웠습니다.</p>
+        </div>
+    </div>
+
+    <script>
+        let isImageVisible = false;
+
+    document.querySelector('.icon-container').addEventListener('click', function() {
+    const mainImage = document.querySelector('.main-image');
+    if (isImageVisible) {
+        mainImage.classList.remove('visible');
+        mainImage.style.width = '0%';
+    } else {
+        mainImage.classList.add('visible');
+        mainImage.style.width = '50%';
+    }
+    isImageVisible = !isImageVisible;
+    });
+
+    document.querySelector('.main-image').addEventListener('click', function() {
+    this.classList.remove('visible');
+    this.style.width = '0%';
+    isImageVisible = false;
+    });
+
+    </script>
+</body>
+</html>
